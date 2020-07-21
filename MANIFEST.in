@@ -1,0 +1,2 @@
+include myPackage/packageData/DNAplain.dat
+include myPackage/packageData/DNA_FASTQ.dat

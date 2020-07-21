@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+bio-feedback-python/__init__.py
+bio-feedback-python/biofeedback.py
+bio_feedback_python.egg-info/PKG-INFO
+bio_feedback_python.egg-info/SOURCES.txt
+bio_feedback_python.egg-info/dependency_links.txt
+bio_feedback_python.egg-info/top_level.txt

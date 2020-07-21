@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: bioprog
+Version: 0.1
+Summary: Feedback, tests and data for Programming in the Biosciences
+Home-page: https://github.com/penholland/bioprog
+Author: Pen Holland
+Author-email: pen.holland@york.ac.uk
+License: MIT
+Description: # Welcome to Programming in the Biosciences!
+        
+        This project provides bespoke modules, data and feedback for learning to program in Python with applications in the biosciences.
+        
+Platform: UNKNOWN

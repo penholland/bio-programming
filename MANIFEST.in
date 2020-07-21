@@ -1,2 +1,2 @@
-include myPackage/packageData/DNAplain.dat
-include myPackage/packageData/DNA_FASTQ.dat
+include bioprog/packageData/DNAplain.dat
+include bioprog/packageData/DNA_FASTQ.dat

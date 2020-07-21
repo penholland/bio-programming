@@ -1,4 +1,4 @@
-from bio-feedback-python import biofeedback
+from bioprog import biofeedback
 
 def test_testFeedback():
 	# make sure the test is run correctly

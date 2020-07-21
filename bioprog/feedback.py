@@ -13,7 +13,7 @@ def rabbits(t, Nt):
 	R = 9.97
 	Nans = N0 * R**t
 	if abs(Nt - Nans) <= 1:
-		print('Correct: 24 * 9.97 ^ {0} = {1}, which is within 1 of your answer {2}'.format(t, round(Nans, 2), Nt)
+		print('Correct: 24 * 9.97 ^ {0} = {1}, which is within 1 of your answer {2}'.format(t, round(Nans, 2), Nt))
 	else:
 		print('Incorrect: try again.')
 	return

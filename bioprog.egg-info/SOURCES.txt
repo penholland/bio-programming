@@ -1,7 +1,7 @@
 MANIFEST.in
 setup.py
 bioprog/__init__.py
-bioprog/biofeedback.py
+bioprog/feedback.py
 bioprog.egg-info/PKG-INFO
 bioprog.egg-info/SOURCES.txt
 bioprog.egg-info/dependency_links.txt

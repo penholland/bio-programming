@@ -2,6 +2,9 @@ def testFeedback(answ):
 	if answ == 'Testing feedback':
 		print('Correct: You have imported and tested the feedback module and function correctly')
 		return
-	print('Incorrect:\nThe answer should be \"Testing feedback\", not \"{0}\"'.format(answ))
+	if not isinstance(answ, str):
+		print('Incorrect: Your answer should be a string.'
+	else:
+		print('Incorrect: Your answer is not the correct string.')
 	return
 

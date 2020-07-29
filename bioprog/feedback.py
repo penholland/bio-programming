@@ -1,6 +1,9 @@
-def testFeedback(answ):
+def testFeedback(answ=None):
 	if answ == 'Testing feedback':
 		print('Correct: You have imported and tested the feedback module and function correctly')
+		return
+	if answ == None:
+		print("Error: no answer provided.")
 		return
 	if not isinstance(answ, str):
 		print('Incorrect: Your answer should be a string.')
@@ -8,13 +11,28 @@ def testFeedback(answ):
 		print('Incorrect: Your answer is not the correct string.')
 	return
 
-def rabbits(t, Nt):
+def rabbits(t=None, Nt=None):
+	if Nt == None or t == None:
+		print('Error: No answer provided.')
+		return
 	N0 = 24
 	R = 9.97
 	Nans = N0 * R**t
-	if abs(Nt - Nans) <= 1:
+	answ_diff = Nt - Nans
+	if abs(answ_diff) <= 1:
 		print('Correct: 24 * 9.97 ^ {0} = {1}, which is within 1 of your answer {2}'.format(t, round(Nans, 2), Nt))
+	elif answ_diff < -1:
+		print('Incorrect: your answer ({0}) is too large.'.format(Nt))
 	else:
-		print('Incorrect: try again.')
+		print('Incorrect: your answer ({0}) is too small.'.format(Nt))
 	return
 	
+def MCQ(q, a):
+	if q == 'morse_list_comprehension':
+		switcher={
+			'A': 'Incorrect',
+			'B': 'Incorrect',
+			'C': 'Correct',
+			'D': 'Incorrect'
+		}
+		return switcher.get(a, 'Invalid answer: please check your response and try again')			

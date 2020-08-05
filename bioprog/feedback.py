@@ -27,6 +27,15 @@ def rabbits(t=None, Nt=None):
 		print('Incorrect: your answer ({0}) is too small.'.format(Nt))
 	return
 	
+def stringsDNA1(answ=None):
+	if answ == None:
+		print("Error: no answer provided")
+	elif answ == 564:
+		print("Correct: the first instance of the search string is at 564.")
+	else:
+		print("Incorrect: try again.")
+
+
 def MCQ(q, A=None):
 	a = A.upper()
 
@@ -50,6 +59,27 @@ def MCQ(q, A=None):
 			'B': 'Correct: Z can be accessed by taking the first letter from the end of the alphabet.',
 			'C': 'Correct: Python counts from zero so Z is the 25th letter in the alphabet list.',
 			'D': 'Incorrect: Python counts from zero, not one, so there is no letter at position 26 in the alphabet list.'
+		}
+	elif q == 'catt':
+		switcher={
+			'A': 'Correct',
+			'B': 'Incorrect',
+			'C': 'Incorrect',
+			'D': 'Incorrect'
+		}
+	elif q == 'ggct':
+		switcher={
+			'A': 'Incorrect',
+			'B': 'Correct',
+			'C': 'Incorrect',
+			'D': 'Incorrect'
+		}
+	elif q == 'sample 1':
+		switcher={
+			'A': 'Incorrect',
+			'B': 'Correct',
+			'C': 'Incorrect',
+			'D': 'Incorrect'
 		}
 	elif q == 'morse_list_comprehension':
 		switcher={

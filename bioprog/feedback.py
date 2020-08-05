@@ -1,12 +1,12 @@
 def testFeedback(answ=None):
-	if answ == 'Testing feedback':
-		print('Correct: You have imported and tested the feedback module and function correctly')
-		return
 	if answ == None:
 		print("Error: no answer provided.")
 		return
-	if not isinstance(answ, str):
+	elif not isinstance(answ, str):
 		print('Incorrect: Your answer should be a string.')
+	elif answ == 'Testing feedback':
+		print('Correct: You have imported and tested the feedback module and function correctly')
+		return
 	else:
 		print('Incorrect: Your answer is not the correct string.')
 	return
@@ -28,11 +28,24 @@ def rabbits(t=None, Nt=None):
 	return
 	
 def MCQ(q, a):
+	if q == 'testMCQ':
+		switcher={
+			'A': 'Correct',
+			'B': 'Incorrect',
+			'C': 'Incorrect',
+			'D': 'Incorrect',
+			'x': '\'x\' is the default response - please update with A, B, C or D'
+		}
+		return switcher.get(a, 'Invalid answer: please check your response and try again')	
+		
 	if q == 'morse_list_comprehension':
 		switcher={
 			'A': 'Incorrect',
 			'B': 'Incorrect',
 			'C': 'Correct',
-			'D': 'Incorrect'
+			'D': 'Incorrect',
+			'x': '\'x\' is the default response - please update with A, B, C or D'
 		}
-		return switcher.get(a, 'Invalid answer: please check your response and try again')			
+		return switcher.get(a, 'Invalid answer: please check your response and try again')	
+	else:
+		return('Question name not recognised: please try again.')

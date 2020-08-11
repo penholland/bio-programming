@@ -60,6 +60,13 @@ def MCQ(q, A=None):
 			'C': 'Correct: Python counts from zero so Z is the 25th letter in the alphabet list.',
 			'D': 'Incorrect: Python counts from zero, not one, so there is no letter at position 26 in the alphabet list.'
 		}
+	elif q == 'ducks':
+		switcher={
+			'A': 'Incorrect: This will find the first occurrence because it searches from the start.',
+			'B': 'Incorrect: This will find the first occurrence because it searches from the start of the first ducks.',
+			'C': 'Incorrect: This searches the string "ducks" for the whole sentence, and will return -1 - not found.',
+			'D': 'Correct: This will find the second occurrence because it only searches from position 10 onwards.'
+		}
 	elif q == 'catt':
 		switcher={
 			'A': 'Correct',

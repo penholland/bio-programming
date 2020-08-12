@@ -44,11 +44,8 @@ def deltaTcheck(q=None, a=None):
 		print('Error: no answer has been specified.')
 		return
 	else:
-		astr = str(a)
-		if not astr.isnumeric():
-			print('Error: your answer should be a number.')
-			return
-		else:
+		try:
+			anumber = float(a)
 			if q == 'first':
 				if a == 1888:
 					print('Correct: the first year in the data set which had increasingly warmer summers in the two preceding years is 1888.')
@@ -73,6 +70,9 @@ def deltaTcheck(q=None, a=None):
 			else:
 				print('Error: your question is not recognised')
 				return
+		except TypeError:
+				print('Error: your answer should be a number.')
+			return
 
 def MCQ(q, A=None):
 	a = A.upper()

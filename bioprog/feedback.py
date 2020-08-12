@@ -44,33 +44,25 @@ def deltaTcheck(q=None, a=None):
 		print('Error: no answer has been specified.')
 		return
 	else:
-		if q == 'first':
-			if not isinstance(a, numeric):
-				print('Error: your answer should be a number.')
-				return
-			else:
-				if int(a) == 1888:
+		astr = str(a)
+		if not astr.isnumeric():
+			print('Error: your answer should be a number.')
+		else:
+			if q == 'first':
+				if a == 1888:
 					print('Correct: the first year in the data set which had increasingly warmer summers in the two preceding years is 1888.')
 					return
 				else:
 					print('Incorrect: the year you have specified was not the first in the data set for which the two preceding summers were increasingly warm.')
 					return	
-		elif q == 'last':
-			if not isinstance(a, numeric):
-				print('Error: your answer should be a number.')
-				return
-			else:
+			elif q == 'last':
 				if int(a) == 2019:
 					print('Correct: the last year in the data set which had increasingly warmer summers in the two preceding years is 2019.')
 					return
 				else:
 					print('Incorrect: the year you have specified was not the last in the data set for which the two preceding summers were increasingly warm.')
 					return	
-		elif q == 'freq':
-			if not isinstance(a, numeric):
-				print('Error: your answer should be a number.')
-				return
-			else:
+			elif q == 'freq':
 				if abs(float(a) - 5.24) < 0.1:
 					print('Correct: the average number of years between predicted mast years is 5.24.')
 					return

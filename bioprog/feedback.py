@@ -62,10 +62,10 @@ def MCQ(q, A=None):
 		}
 	elif q == 'ducks':
 		switcher={
-			'A': 'Incorrect: This will find the first occurrence because it searches from the start.',
-			'B': 'Incorrect: This will find the first occurrence because it searches from the start of the first ducks.',
+			'A': 'Incorrect: This will find the first occurrence (4) because it searches from the start.',
+			'B': 'Incorrect: This will find the first occurrence (4) because it searches from the start of that occurrence.',
 			'C': 'Incorrect: This searches the string "ducks" for the whole sentence, and will return -1 - not found.',
-			'D': 'Correct: This will find the second occurrence because it only searches from position 10 onwards.'
+			'D': 'Correct: This will find the second occurrence (49) because it searches from later than the start of the first occurrence (4).'
 		}
 	elif q == 'catt':
 		switcher={
@@ -94,6 +94,13 @@ def MCQ(q, A=None):
 			'B': 'Incorrect',
 			'C': 'Correct',
 			'D': 'Incorrect'
+		}
+	elif q == 'seasonal_temperatures':
+		switcher={
+			'A': 'Incorrect: This is spring temperatures.',
+			'B': 'Incorrect: This is summer temperatures.',
+			'C': 'Correct: This is autumn temperatures.',
+			'D': 'Incorrect: This is winter temperatures.'
 		}
 	else:
 	

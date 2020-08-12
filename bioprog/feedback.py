@@ -47,6 +47,7 @@ def deltaTcheck(q=None, a=None):
 		astr = str(a)
 		if not astr.isnumeric():
 			print('Error: your answer should be a number.')
+			return
 		else:
 			if q == 'first':
 				if a == 1888:
@@ -69,9 +70,9 @@ def deltaTcheck(q=None, a=None):
 				else:
 					print('Incorrect: your suggested answer is not within 0.1 of the average number of years between predicted mast years.')
 					return	
-		else:
-			print('Error: your question is not recognised')
-			return
+			else:
+				print('Error: your question is not recognised')
+				return
 
 def MCQ(q, A=None):
 	a = A.upper()

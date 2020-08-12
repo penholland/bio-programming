@@ -140,6 +140,13 @@ def MCQ(q, A=None):
 			'C': 'Correct: These are autumn temperatures.',
 			'D': 'Incorrect: These are winter temperatures.'
 		}
+	elif q == 'writing_files':
+		switcher={
+			'A': 'Incorrect: There are 524288 cells at Time = 19.',
+			'B': 'Correct: There are 1048576 cells at Time = 20.',
+			'C': 'Incorrect: There are 4194304 cells at Time = 22.',
+			'D': 'Incorrect: There are 8388608 cells at Time = 23.'
+		}
 	else:
 	
 		return('Question name not recognised: please try again.')

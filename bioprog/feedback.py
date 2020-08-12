@@ -70,7 +70,7 @@ def deltaTcheck(q=None, a=None):
 			else:
 				print('Error: your question is not recognised')
 				return
-		except TypeError:
+		except:
 			print('Error: your answer should be a number.')
 			return
 

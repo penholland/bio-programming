@@ -71,7 +71,7 @@ def deltaTcheck(q=None, a=None):
 				print('Error: your question is not recognised')
 				return
 		except TypeError:
-				print('Error: your answer should be a number.')
+			print('Error: your answer should be a number.')
 			return
 
 def MCQ(q, A=None):

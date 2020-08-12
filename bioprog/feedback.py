@@ -36,6 +36,51 @@ def stringsDNA1(answ=None):
 		print("Incorrect: try again.")
 
 
+def deltaTcheck(q=None, a=None):
+	if q == None:
+		print('Error: no question part has been specified.')
+		return
+	elif a == None:
+		print('Error: no answer has been specified.')
+		return
+	else:
+		if q == 'first':
+			if not isinstance(a, numeric):
+				print('Error: your answer should be a number.')
+				return
+			else:
+				if int(a) == 1888:
+					print('Correct: the first year in the data set which had increasingly warmer summers in the two preceding years is 1888.')
+					return
+				else:
+					print('Incorrect: the year you have specified was not the first in the data set for which the two preceding summers were increasingly warm.')
+					return	
+		elif q == 'last':
+			if not isinstance(a, numeric):
+				print('Error: your answer should be a number.')
+				return
+			else:
+				if int(a) == 2019:
+					print('Correct: the last year in the data set which had increasingly warmer summers in the two preceding years is 2019.')
+					return
+				else:
+					print('Incorrect: the year you have specified was not the last in the data set for which the two preceding summers were increasingly warm.')
+					return	
+		elif q == 'freq':
+			if not isinstance(a, numeric):
+				print('Error: your answer should be a number.')
+				return
+			else:
+				if abs(float(a) - 5.24) < 0.1:
+					print('Correct: the average number of years between predicted mast years is 5.24.')
+					return
+				else:
+					print('Incorrect: your suggested answer is not within 0.1 of the average number of years between predicted mast years.')
+					return	
+		else:
+			print('Error: your question is not recognised')
+			return
+
 def MCQ(q, A=None):
 	a = A.upper()
 
@@ -97,10 +142,10 @@ def MCQ(q, A=None):
 		}
 	elif q == 'seasonal_temperatures':
 		switcher={
-			'A': 'Incorrect: This is spring temperatures.',
-			'B': 'Incorrect: This is summer temperatures.',
-			'C': 'Correct: This is autumn temperatures.',
-			'D': 'Incorrect: This is winter temperatures.'
+			'A': 'Incorrect: These are spring temperatures.',
+			'B': 'Incorrect: These are summer temperatures.',
+			'C': 'Correct: These are autumn temperatures.',
+			'D': 'Incorrect: These are winter temperatures.'
 		}
 	else:
 	

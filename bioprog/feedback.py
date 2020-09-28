@@ -196,7 +196,7 @@ def MCQ(q, A=None):
 			'C': 'Incorrect: There are 4194304 cells at Time = 22.',
 			'D': 'Incorrect: There are 8388608 cells at Time = 23.'
 		}
-	elif q == colours':
+	elif q == 'colours':
 		switcher={
 			'A': 'Incorrect: This colour is closer to a bright turquoise.',
 			'B': 'Incorrect: This colour has the emphasis on green.',

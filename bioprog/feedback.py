@@ -149,10 +149,10 @@ def MCQ(q, A=None):
 		}
 	elif q == 'ducksM':
 		switcher={
-			'A': 'Incorrect: this will return the sentence with white space at either end stripped out',
-			'B': 'Correct: this will return the character with which the sentence starts',
-			'C': 'Incorrect: this will split the sentence on white space (default)',
-			'D': 'Incorrect: this will return the index of the letter M, not the letter itself'
+			'A': 'Incorrect: this will return the sentence with the M stripped away',
+			'B': 'Correct: this will return True because the sentence starts with M',
+			'C': 'Incorrect: this will split the sentence into a list at the position of the M',
+			'D': 'Incorrect: this will return the index of the letter M'
 		}
 	elif q == 'catt':
 		switcher={

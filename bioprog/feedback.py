@@ -84,12 +84,54 @@ def MCQ(q, A=None):
 			'C': 'Incorrect: this is more commonly used for multiple line comments in C',
 			'D': 'Incorrect: this is a string'
 		}
+	elif q == 'random':
+		switcher={
+			'A': 'Incorrect: randint produces random integers on a given interval',
+			'B': 'Incorrect: normal produces samples from a normal distribution',
+			'C': 'Correct: random variates from the Poisson distribution can be produced using poisson not randpois',
+			'D': 'Incorrect: standard_gamma produces random variates from a standard Gamma distribution'
+		}
+	elif q == 'randint':
+		switcher={
+			'A': 'Incorrect: This is the smallest number that could be produced',
+			'B': 'Correct: This is the largest number that could be produced',
+			'C': 'Incorrect: randint can only produce integers',
+			'D': 'Incorrect: randint produces random integers between a (inclusive) and b (exclusive) so b-1 is the highest number that can be produced'
+		}		
+	elif q == 'strings':
+		switcher={
+			'A': 'Uncertain: w and y are strings, but we cannot be sure about z because it does not include any quotation marks',
+			'B': 'Correct: w, x and y are definitely all strings',
+			'C': 'Incorrect: v and x are both numbers',
+			'D': 'Incorrect: v is a number and z does not include any quotation marks so may be any kind of data type'
+		}
+	elif q == 'truefalse':
+		switcher={
+			'A': 'Incorrect',
+			'B': 'Incorrect',
+			'C': 'Incorrect',
+			'D': 'Correct: True and False are Boolean, or binary/logical, data types.'
+		}
+	elif q == 'variablenames':
+		switcher={
+			'A': 'Incorrect: this is a built in function for finding the length of a list sequence',
+			'B': 'Correct: this could be used as a variable name',
+			'C': 'Incorrect: this is a built in function to print information',
+			'D': 'Correct: this could be used as a variable name'
+		}
+	elif q == 'errors':
+		switcher={
+			'A': 'Incorrect: A SyntaxError occurs when your syntax (formatting of your code) does not follow Python rules',
+			'B': 'Incorrect: A ZeroDivisionError occurs when you try to divide by zero, and would get infinity',
+			'C': 'Correct: Python will not warn you if you have created an infinite loop. Try writing \'while True:\' to test this!',
+			'D': 'Incorrect: A TypeError occurs when you try to do something to a piece of data that is not compatible with its data type'
+		}
 	elif q == 'sep':
 		switcher={
 			'A': 'Incorrect',
 			'B': 'Incorrect',
 			'C': 'Incorrect',
-			'D': 'Correct'
+			'D': 'Correct: \\n gives a new line in a piece of text'
 		}
 	elif q == 'Z':
 		switcher={
@@ -104,6 +146,13 @@ def MCQ(q, A=None):
 			'B': 'Incorrect: This will find the first occurrence (4) because it searches from the start of that occurrence.',
 			'C': 'Incorrect: This searches the string "ducks" for the whole sentence, and will return -1 - not found.',
 			'D': 'Correct: This will find the second occurrence (49) because it searches from later than the start of the first occurrence (4).'
+		}
+	elif q == 'ducksM':
+		switcher={
+			'A': 'Incorrect: this will return the sentence with white space at either end stripped out',
+			'B': 'Correct: this will return the character with which the sentence starts',
+			'C': 'Incorrect: this will split the sentence on white space (default)',
+			'D': 'Incorrect: this will return the index of the letter M, not the letter itself'
 		}
 	elif q == 'catt':
 		switcher={
@@ -146,6 +195,13 @@ def MCQ(q, A=None):
 			'B': 'Correct: There are 1048576 cells at Time = 20.',
 			'C': 'Incorrect: There are 4194304 cells at Time = 22.',
 			'D': 'Incorrect: There are 8388608 cells at Time = 23.'
+		}
+	elif q == colours':
+		switcher={
+			'A': 'Incorrect: This colour is closer to a bright turquoise.',
+			'B': 'Incorrect: This colour has the emphasis on green.',
+			'C': 'Incorrect: This colour is almost black',
+			'D': 'Correct: This colour is not too light, and has more red than any other colour.'
 		}
 	else:
 	

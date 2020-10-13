@@ -1,3 +1,5 @@
+# python3 setup.py sdist
+
 def testFeedback(answ=None):
 	if answ == None:
 		print("Error: no answer provided.")
@@ -175,6 +177,27 @@ def MCQ(q, A=None):
 			'C': 'Incorrect',
 			'D': 'Incorrect'
 		}
+	elif q == 'SOS':
+		switcher={
+			'A': 'Incorrect: This would join the dots in S by a space, but could not print O as well.',
+			'B': 'Incorrect: This would try to use letter as a string rather than a list, so would fail.',
+			'C': 'Correct: This would take the dots or dashes in the list letter, and join them with an empty string.',
+			'D': 'Incorrect: This would assume the list S was a string, so would fail.'
+		}
+	elif q == 'morse_dict_list':
+		switcher={
+			'A': 'Incorrect: S, O and A are referred to as variables here, and do not exist in this bit of code.',
+			'B': 'Incorrect: This follows through to the actual values of the dictionary, but will not be returned by list.',
+			'C': 'Incorrect: This is the values of the dictionary, rather than the keys.',
+			'D': 'Correct: list returns the keys in the dictionary given.'
+		}
+	elif q == 'morse_dict_T':
+		switcher={
+			'A': 'Correct: This uses the string \'T\' as a key, and the variable dash as the value (assuming it exists).',
+			'B': 'Incorrect: This uses a variable rather than a string for the key \'T\'.',
+			'C': 'Correct: This uses the string \'T\' as a key, and the string \'-\' as the value (assuming it exists)',
+			'D': 'Incorrect: This uses a variable rather than a string for the key \'T\', and a dot instead of a dash for the value.'
+		}
 	elif q == 'morse_list_comprehension':
 		switcher={
 			'A': 'Incorrect',
@@ -210,3 +233,4 @@ def MCQ(q, A=None):
 	switcher['x'] = '\'x\' is the default response - please update with A, B, C or D'
 	switcher[None] = 'No response given - please update with A, B, C or D'
 	return switcher.get(a, 'Invalid answer: please check your response and try again')		
+
